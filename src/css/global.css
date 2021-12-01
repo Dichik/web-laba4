@@ -1,7 +1,7 @@
 :root {
-  --background-color: #0D0C1D;
+  --background-color: #0d0c1d;
   --menu-color: #343078;
-  --white-changed-color: #EFFFFA;
+  --white-changed-color: #effffa;
   --hovered-menu-color: #554fc5;
 }
 
@@ -12,7 +12,6 @@
   background-color: var(--menu-color);
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
-
   visibility: hidden;
 }
 
@@ -20,6 +19,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     visibility: visible;
     opacity: 1;
@@ -35,8 +35,7 @@
   width: 100%;
   padding: 50px;
   vertical-align: center;
-
-  border: 0.1px solid rgba(103, 96, 222, 0.25);
+  border: 0.1px solid rgb(103 96 222 / 25%);
   border-radius: 15px 50px;
 }
 
@@ -47,9 +46,20 @@
 .total {
   background-color: var(--background-color);
   color: var(--white-changed-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
-/*FIXME problem with HOME text*/
+
+/* FIXME problem with HOME text */
 .text-container {
   text-align: center;
 }
