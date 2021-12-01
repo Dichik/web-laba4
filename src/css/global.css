@@ -1,20 +1,55 @@
+:root {
+  --background-color: #0D0C1D;
+  --menu-color: #343078;
+  --white-changed-color: #EFFFFA;
+  --hovered-menu-color: #554fc5;
+}
+
 .Header {
-  height: 100px;
+  position: fixed;
+  height: 100%;
+  width: 500px;
+  background-color: var(--menu-color);
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-item {
+  height: 50px;
   width: 100%;
-  background-color: #343078;
+  padding: 50px;
+  vertical-align: center;
+
+  border: 0.1px solid rgba(103, 96, 222, 0.25);
+  border-radius: 15px 50px;
 }
 
-.bar {
-  padding-top: 20px;
-  width: 100px;
-}
-
-.bar:hover {
-  background-color: #554fc5;
+.menu-item:hover {
+  background-color: var(--hovered-menu-color);
 }
 
 .total {
-  background-color: #0D0C1D;
-  color: #EFFFFA;
+  background-color: var(--background-color);
+  color: var(--white-changed-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/*FIXME problem with HOME text*/
+.text-container {
+  text-align: center;
 }
